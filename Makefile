@@ -4,7 +4,7 @@ default: clean all
 clean:
 	go clean
 	rm -rf download-geofabrik_* *.zip
-gox:
+gox: dep
 	gox --output="download-geofabrik_{{.OS}}_{{.Arch}}/{{.Dir}}"
 geofabrik:
 	echo "Generating geofabrik.yml"
@@ -26,6 +26,8 @@ readme: geofabrik osmfr gislab
 	echo "" >> README.md
 	echo "## List of elements from glis-lab.info" >> README.md
 	go run $(gofiles) --service "gislab" list --markdown >> README.md
+dep:
+    dep ensure
 package: gox geofabrik osmfr
 	for i in download-geofabrik_* ;\
 	do \

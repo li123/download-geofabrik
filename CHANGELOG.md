@@ -1,5 +1,8 @@
 # Change Log
 
+## [v2.3.0-rc0](https://github.com/julien-noblet/download-geofabrik/tree/v2.3.0-rc0) (2018-05-02)
+[Full Changelog](https://github.com/julien-noblet/download-geofabrik/compare/fix#32...v2.3.0-rc0)
+
 ## [fix#32](https://github.com/julien-noblet/download-geofabrik/tree/fix#32) (2018-04-03)
 [Full Changelog](https://github.com/julien-noblet/download-geofabrik/compare/fix#26-2...fix#32)
 

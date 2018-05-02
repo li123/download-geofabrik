@@ -1,6 +1,8 @@
 #!/bin/sh
 #
 gofmt -s -w *.go
+dep status -dot| dot -Tpng -o docs/dependencies.png
+go-callvis -group pkg -nostd ./| dot -Tpng -o docs/callgraph.png
 github_changelog_generator
 make readme
 git add geofabrik.yml
@@ -8,3 +10,4 @@ git add openstreetmap.fr.yml
 git add gislab.yml
 git add CHANGELOG.md
 git add README.md
+git add docs/*
