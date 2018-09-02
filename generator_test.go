@@ -294,7 +294,7 @@ func TestExt_parseOSMfr(t *testing.T) {
 			want: ElementSlice{
 				"france_metro_dom_com_nc": {ID: "france_metro_dom_com_nc", File: "", Meta: false, Name: "france_metro_dom_com_nc", Formats: []string{"osm.pbf", "state"}, Parent: "merge"},
 				"france_taaf":             {ID: "france_taaf", File: "", Meta: false, Name: "france_taaf", Formats: []string{"osm.pbf", "state"}, Parent: "merge"},
-				"israel_and_palestine":    {ID: "israel_and_palestine", File: "", Meta: false, Name: "israel_and_palestine", Formats: []string{"osm.pbf", "state"}, Parent: "merge"},
+				//"israel_and_palestine":    {ID: "israel_and_palestine", File: "", Meta: false, Name: "israel_and_palestine", Formats: []string{"osm.pbf", "state"}, Parent: "merge"},
 				"kiribati":                {ID: "kiribati", File: "", Meta: false, Name: "kiribati", Formats: []string{"osm.pbf", "state"}, Parent: "merge"},
 				"fiji":                    {ID: "fiji", File: "", Meta: false, Name: "fiji", Formats: []string{"osm.pbf", "state"}, Parent: "merge"},
 			},
@@ -469,7 +469,7 @@ func TestExt_parseGeofabrik(t *testing.T) {
 			want1: true,
 			want: ElementSlice{
 				"us":            {ID: "us", File: "", Meta: true, Name: "United States of America", Formats: []string{}, Parent: "north-america"},
-				"south-america": {ID: "south-america", File: "", Meta: false, Name: "South America", Formats: []string{"osm.pbf", "osm.pbf.md5", "poly", "kml", "state"}, Parent: ""},
+				"south-america": {ID: "south-america", File: "", Meta: false, Name: "South America", Formats: []string{"osm.pbf", "osm.pbf.md5", "osm.bz2", "osm.bz2.md5", "poly", "kml", "state"}, Parent: ""},
 			},
 		},
 		{
